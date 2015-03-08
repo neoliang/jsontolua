@@ -2,14 +2,17 @@
 a python script convert json to lua table
 
 usage:
+git clone https://github.com/neoliang/jsontolua.git
+cd jsontolua
+python ./setup.py install
+
+## Quick Expamples
+```python
 
 #convert string
-
-print jsontolua.str_to_lua_table('{"a":"1","b":2,"c":[1,2,3]}')
-
+jsontolua.str_to_lua_table('{"a":"1","b":2,"c":[1,2,3]}')
+#return lua code 
 '''
-lua code:
-
 {
 	a = '1',
 	c = {
@@ -19,29 +22,9 @@ lua code:
 }
 
 '''
-
-print jsontolua.str_to_lua_table('[]')
-'''
-lua code 
-
-{
-	
-}
-'''
-
-print jsontolua.str_to_lua_table('[1,2,3]')
-
-'''
-lua code
-
-{
-	1,2,3
-}
-
-'''
-
 #convert file
-
 jsontolua.file_to_lua_file('./1.json','./1.lua')
+
+```
 
 
