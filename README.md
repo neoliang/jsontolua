@@ -9,6 +9,12 @@ cd jsontolua
 python ./setup.py install
 
 ## Quick Expamples
+
+#command line
+
+python ./convert_json.py json_file lua_file
+
+#code
 ```python
 
 #convert string
