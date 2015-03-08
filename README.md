@@ -1,9 +1,11 @@
 # jsontolua
 a python script convert json to lua table
 
-usage:
+#usage:
 git clone https://github.com/neoliang/jsontolua.git
+
 cd jsontolua
+
 python ./setup.py install
 
 ## Quick Expamples
